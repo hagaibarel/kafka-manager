@@ -25,8 +25,10 @@ docker pull hbarel/kafka-manager
 ## Running a container
 
 ```shell
-docker run -d -p -e "ZK_HOSTS=localhost:2181" 9000:9000 hbarel/kafka-manager
+docker run -d -e "ZK_HOSTS=localhost:2181" -p 9000:9000 hbarel/kafka-manager
 ```
+
+And then navigate to `localhost:9000` for `kafka-manager`'s UI
 
 ## Notes
 
